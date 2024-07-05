@@ -14,7 +14,7 @@ jobs:
       - name: Build docker image
         run: sudo docker build -t tengoshamugia/kidsfront .
       - name: Login to docker hub
-        run: sudo docker login -u "tengoshamugia" -p "Docker.com"
+        run: sudo docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASS }}
       - name: Publish image to docker hub
         run: sudo docker push tengoshamugia/kidsfront:latest
 
