@@ -20,7 +20,11 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: self-hosted
+    #runs-on: self-hosted
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        runner: [ ec2-kg-front, ec2-kg-front2 ]
     steps:
       - name: Pull image from docker hub
         run: sudo docker pull tengoshamugia/kidsfront:latest
