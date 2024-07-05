@@ -14,7 +14,7 @@ const LogoutButton = () => {
   return (
     <button
       onClick={handleLogout}
-      className="w-[100px] h-10 bg-[#e74646] border-none rounded-lg font-semibold"
+      className="w-[100px] h-10 bg-[#e74646] hover:bg-[#f36d6d] border-none rounded-lg font-semibold"
     >
       გასვლა
     </button>

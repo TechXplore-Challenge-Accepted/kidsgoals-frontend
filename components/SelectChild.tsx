@@ -12,7 +12,7 @@ const SelectChild = () => {
   };
 
   return (
-    <div className="w-[200px]">
+    <div className="w-[200px] mb-10 computer:mb-0">
       <label
         htmlFor="child-select"
         className="block text-sm font-medium text-gray-700"
