@@ -1,17 +1,20 @@
 import Link from "next/link";
 
+import { CgProfile } from "react-icons/cg";
+
 const SignUpPage = () => {
   return (
     <section className="flex w-full min-h-screen flex-col items-center justify-center p-24 bg-slate-700">
       <div className="w-[400px] h-[600px] bg-white rounded-md py-4 px-10">
-        <Link href="/">
+        <Link href="/login">
           <p>Back</p>
         </Link>
         <div className="w-full flex flex-col items-center pt-6 pb-5">
+          <CgProfile className="text-[60px]" />
           <h1 className="mt-5 mb-2 text-2xl font-semibold">Register:</h1>
         </div>
         <form className="w-full flex flex-col gap-4 py-4">
-          <input
+          {/* <input
             type="text"
             name="first-name"
             id="first-name"
@@ -26,7 +29,7 @@ const SignUpPage = () => {
             placeholder="Last Name"
             required
             className="text-base p-2 bg-[#d5dfe5] rounded-md"
-          />
+          /> */}
           <input
             type="email"
             name="email"
@@ -35,14 +38,14 @@ const SignUpPage = () => {
             required
             className="text-base p-2 bg-[#d5dfe5] rounded-md"
           />
-          <input
+          {/* <input
             type="number"
             name="phone"
             id="phone"
             placeholder="Phone"
             required
             className="text-base p-2 bg-[#d5dfe5] rounded-md"
-          />
+          /> */}
           <input
             type="password"
             name="password"
