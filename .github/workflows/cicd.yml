@@ -18,13 +18,21 @@ jobs:
       - name: Publish image to docker hub
         run: sudo docker push tengoshamugia/kidsfront:latest
 
-  deploy:
+  deploy-1:
     needs: build
-    runs-on: ["first", "second"]
-    # runs-on: ${{ matrix.runner }}
-    # strategy:
-    #   matrix:
-    #     runner: [ ec2-kg-front, ec2-kg-front2 ]
+    runs-on: ["self-hosted", "first"]
+    steps:
+      - name: Pull image from docker hub
+        run: sudo docker pull tengoshamugia/kidsfront:latest
+      - name: Delete old container
+        run: sudo docker rm -f kidsfront 
+      - name: Run docker container
+        run: sudo docker run -d -p 80:3000 --name kidsfront tengoshamugia/kidsfront
+
+
+  deploy-2:
+    needs: build
+    runs-on: ["self-hosted", "second"]
     steps:
       - name: Pull image from docker hub
         run: sudo docker pull tengoshamugia/kidsfront:latest
