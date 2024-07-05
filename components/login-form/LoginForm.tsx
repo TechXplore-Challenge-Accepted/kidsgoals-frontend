@@ -19,7 +19,7 @@ const LoginForm = () => {
       <div className="w-full flex flex-col items-center pt-6 pb-5">
         <CgProfile className="text-[60px]" />
         <h1 className="mt-5 mb-2 text-2xl font-semibold">Sign In</h1>
-        <p>Sign in to your account</p>
+        <p>Sign in to your account test</p>
       </div>
       <div className="flex bg-[#d5dfe5] rounded-md p-1">
         <button
