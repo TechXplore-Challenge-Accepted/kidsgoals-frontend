@@ -2,18 +2,20 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { handleLogin } from "@/app/actions";
 
 const ParentLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
 
-  const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+  const onLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const isAuthenticated = username === "user" && password === "password";
+    const isAuthenticated = handleLogin(username, password);
 
     if (isAuthenticated) {
+      // Sync local storage with cookie for middleware check
       document.cookie = "authenticated=true; path=/;";
 
       router.push("/");
@@ -23,7 +25,7 @@ const ParentLogin = () => {
   };
 
   return (
-    <form className="w-full flex flex-col gap-4 py-4" onSubmit={handleLogin}>
+    <form className="w-full flex flex-col gap-4 py-4" onSubmit={onLogin}>
       <input
         type="text"
         name="username"

@@ -1,11 +1,14 @@
 "use client";
 
+import { handleLogout } from "@/app/actions";
 import { useRouter } from "next/navigation";
 
 const LogoutButton = () => {
   const router = useRouter();
 
-  const handleLogout = () => {
+  const onLogout = () => {
+    handleLogout();
+
     document.cookie = "authenticated=; path=/;";
 
     router.push("/login");
@@ -13,8 +16,8 @@ const LogoutButton = () => {
 
   return (
     <button
-      onClick={handleLogout}
-      className="w-[100px] h-10 bg-[#e74646] hover:bg-[#f36d6d] border-none rounded-lg font-semibold"
+      onClick={onLogout}
+      className="w-[100px] h-10 bg-[#e74646] hover:bg-[#EE4E4E] border-none rounded-lg font-semibold"
     >
       გასვლა
     </button>

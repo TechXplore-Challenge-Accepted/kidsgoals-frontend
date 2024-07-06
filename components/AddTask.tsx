@@ -48,8 +48,8 @@ const AddTask: React.FC<AddTaskProps> = ({ onSave, onClose }) => {
         }}
       >
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
-            Task
+          <label className="block text-md font-semibold text-gray-700">
+            დავალება
           </label>
           <input
             type="text"
@@ -60,8 +60,8 @@ const AddTask: React.FC<AddTaskProps> = ({ onSave, onClose }) => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
-            Description
+          <label className="block text-md font-semibold text-gray-700">
+            აღწერა
           </label>
           <textarea
             value={taskDescription}
@@ -71,8 +71,8 @@ const AddTask: React.FC<AddTaskProps> = ({ onSave, onClose }) => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
-            Wage
+          <label className="block text-md font-semibold text-gray-700">
+            თანხა
           </label>
           <input
             type="number"
@@ -86,15 +86,15 @@ const AddTask: React.FC<AddTaskProps> = ({ onSave, onClose }) => {
           <button
             type="button"
             onClick={onClose}
-            className="bg-gray-500 text-white py-2 px-4 rounded-lg"
+            className="bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg"
           >
-            Cancel
+            უკან
           </button>
           <button
             type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded-lg"
+            className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg"
           >
-            Save
+            შენახვა
           </button>
         </div>
       </form>

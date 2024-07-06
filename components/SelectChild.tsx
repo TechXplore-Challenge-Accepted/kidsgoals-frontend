@@ -27,11 +27,11 @@ const SelectChild = () => {
         className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       >
         <option value="" disabled>
-          Select a child
+          აირჩიე:
         </option>
-        <option value="David">David</option>
-        <option value="John">John</option>
-        <option value="Steven">Steven</option>
+        <option value="დავითი">დავითი</option>
+        <option value="ლევანი">ლევანი</option>
+        <option value="ბექა">ბექა</option>
       </select>
       {selectedChild && (
         <div className="selected-child mt-4">

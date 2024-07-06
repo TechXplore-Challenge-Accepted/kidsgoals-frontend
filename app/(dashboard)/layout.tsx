@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 const DashboardLayout = ({
@@ -9,6 +10,7 @@ const DashboardLayout = ({
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };

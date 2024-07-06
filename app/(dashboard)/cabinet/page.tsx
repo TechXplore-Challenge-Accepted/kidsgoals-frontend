@@ -28,10 +28,11 @@ const CabinetPage = () => {
   };
 
   return (
-    <section className="w-full min-h-screen bg-[#FFF5C2] py-36">
+    <section className="w-full min-h-screen bg-slate-700 py-36">
       <div className="w-full p-20 flex justify-between">
-        <div className="w-[500px] computer:w-[600px] h-[200px] computer:h-[300px] bg-[#3081D0] rounded-3xl p-16 flex flex-col justify-end">
-          <p className="text-3xl font-bold text-white">20 GEL</p>
+        <div className="w-[500px] computer:w-[600px] h-[200px] computer:h-[300px] bg-[#3081D0] rounded-3xl p-16 flex flex-col justify-around shadow-lg shadow-black">
+          <p className="text-2xl font-bold text-white">5488 72** **** 1234</p>
+          <p className="text-3xl font-bold text-white">Balance: 20 GEL</p>
         </div>
         <div className="w-[800px] computer:flex computer:justify-around px-48 computer:px-0">
           <SelectChild />
