@@ -14,15 +14,15 @@ const Header = () => {
       <nav className="h-full">
         <ul className="flex items-center text-black font-semibold text-lg h-full">
           <Link href="/" className="h-full w-[150px]">
-            <li className="h-full flex justify-center items-center cursor-pointer hover:bg-white transition-colors duration-300 ease-in">
+            <li className="h-full flex justify-center items-center cursor-pointer hover:bg-[#eee] transition-colors duration-300 ease-in">
               მთავარი
             </li>
           </Link>
 
-          <li className="h-full w-[150px] flex justify-center items-center cursor-pointer hover:bg-white transition-colors duration-300 ease-in">
+          <li className="h-full w-[150px] flex justify-center items-center cursor-pointer hover:bg-[#eee] transition-colors duration-300 ease-in">
             ჩვენს შესახებ
           </li>
-          <li className="h-full w-[150px] flex justify-center items-center cursor-pointer hover:bg-white transition-colors duration-300 ease-in">
+          <li className="h-full w-[150px] flex justify-center items-center cursor-pointer hover:bg-[#eee] transition-colors duration-300 ease-in">
             კონტაქტი
           </li>
         </ul>

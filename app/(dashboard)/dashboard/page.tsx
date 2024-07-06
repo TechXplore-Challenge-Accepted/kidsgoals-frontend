@@ -46,7 +46,7 @@ const CabinetPage = () => {
             {tasks.map((task, index) => (
               <div
                 key={index}
-                className="w-full h-[150px] p-4 bg-white mt-4 rounded-md shadow-md flex flex-col justify-between"
+                className="w-full h-[150px] p-4 bg-white mt-4 rounded-md flex flex-col justify-between shadow-lg shadow-black"
               >
                 <p className="text-xl font-semibold">{task.name}</p>
                 <p className="text-base">{task.description}</p>
