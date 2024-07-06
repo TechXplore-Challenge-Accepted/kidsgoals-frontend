@@ -2,10 +2,10 @@ const ChildLogin = () => {
   return (
     <form className="w-full flex flex-col gap-4 py-4">
       <input
-        type="number"
-        name="phone"
-        id="phone"
-        placeholder="Phone"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
         required
         className="text-base p-2 bg-[#d5dfe5] rounded-md"
       />
